@@ -3,6 +3,8 @@ project(imu_tk)
 cmake_minimum_required (VERSION 2.8) 
 cmake_policy(SET CMP0015 NEW)
 
+add_compile_options(-g -ggdb -O0 -Wall -fstack-protector-all -march=native -fnon-call-exceptions)
+
 if ("${CMAKE_BUILD_TYPE}" STREQUAL "")
   set(CMAKE_BUILD_TYPE "Release")
 endif()
