@@ -3,3 +3,4 @@ build/
 test_imu_calib
 test_integration
 lib/
+*.calib
